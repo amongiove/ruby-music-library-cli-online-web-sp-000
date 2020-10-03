@@ -1,3 +1,4 @@
+require 'pry'
 class MusicLibraryController
   attr_accessor :path
 
@@ -25,6 +26,7 @@ class MusicLibraryController
   end
 
     def list_songs
+      binding.pry
       nunmber = 1
       sorted_songs = Song.all.sort
       sorted_songs.each do |song|
