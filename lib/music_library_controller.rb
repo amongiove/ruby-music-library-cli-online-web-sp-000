@@ -29,7 +29,7 @@ class MusicLibraryController
       # binding.pry
       number = 1
       Song.all.each do |song|
-        puts "#{number}. song"
+        puts "#{number}." + song
         number += 1
       end
     end
