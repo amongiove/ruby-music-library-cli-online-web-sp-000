@@ -28,8 +28,7 @@ class MusicLibraryController
     def list_songs
       binding.pry
       nunmber = 1
-      sorted_songs = Song.all.sort
-      sorted_songs.each do |song|
+      Song.all.each do |song|
         puts number ". #{song}"
         number += 1
       end
