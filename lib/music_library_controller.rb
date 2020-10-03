@@ -74,7 +74,7 @@ class MusicLibraryController
         Song.all.sort_by {|song| song.name}
           song = Song.all[song_number - 1]
       #
-      puts "Playing " + song.name + " by " + song.artist.name
+          puts "Playing " + song.name + " by " + song.artist.name
       # end
     end
 
