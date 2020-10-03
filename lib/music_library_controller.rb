@@ -28,7 +28,7 @@ class MusicLibraryController
       nunmber = 0
       sorted_songs = Song.all.sort
       sorted_songs.each do |song|
-        puts "number +=1. #{song}"
+        puts number +=1 ". #{song}"
       end
     end
 
