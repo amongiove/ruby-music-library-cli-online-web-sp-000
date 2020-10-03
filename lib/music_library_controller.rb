@@ -29,6 +29,7 @@ class MusicLibraryController
       sorted_songs = Song.all.sort
       sorted_songs.each do |song|
         puts number ". #{song}"
+        number += 1
       end
     end
 
