@@ -51,14 +51,15 @@ class MusicLibraryController
           puts puts "#{index + 1}" + ". " + song.name
         end
       end
-
     end
-    #
-    # def list_songs_by_genre
-    # end
-    #
-    # def play_song
-    # end
+    
+    def list_songs_by_genre
+      puts "Please enter the name of an genre:"
+      user_genre = gets.strip
+    end
+    
+    def play_song
+    end
 
 
 end
