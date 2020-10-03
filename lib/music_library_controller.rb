@@ -68,6 +68,9 @@ class MusicLibraryController
     def play_song
       puts "Which song number would you like to play?"
       user_song = gets.strip
+      song = Song.find_by_name(user_song)
+      if song != nil
+        puts "Playing " + song.name + " by " + song.artist.name
     end
 
 
