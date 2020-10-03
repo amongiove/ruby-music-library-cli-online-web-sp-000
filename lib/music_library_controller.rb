@@ -30,7 +30,7 @@ class MusicLibraryController
       song_num = 0
       Song.all.sort_by {|song| song.name}.each do |song|
         song_num += 1
-        puts song_num.to_s + ". " + song.artist.name + " - " + song.name + " - " + song.genre.name
+        puts "#{index}" + ". " + song.artist.name + " - " + song.name + " - " + song.genre.name
       end
 
       # sorted_songs = Song.all.sort_by {|song| song.name}
