@@ -28,7 +28,7 @@ class MusicLibraryController
     def list_songs
 
       index = 0
-      for song in Song.all
+      for song in Song.all.sort
         index += 1
         puts index.to_s + ". " + song.artist.name + " - " + song.name + " - " + song.genre.name
       end
