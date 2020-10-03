@@ -30,7 +30,7 @@ class MusicLibraryController
       index = 0
       for song in Song.all
         index += 1
-        puts index + ". " + song.artist.name + " - " + song.name + " - " + song.genre.name
+        puts index.to_s + ". " + song.artist.name + " - " + song.name + " - " + song.genre.name
       end
       # Song.all.each do |song|
       #   puts song
