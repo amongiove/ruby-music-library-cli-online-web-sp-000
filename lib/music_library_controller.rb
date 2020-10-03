@@ -31,23 +31,23 @@ class MusicLibraryController
       end
     end
 
-    def list_artists
-      Artist.all.sort.each_with_index do |artist|
-        puts "#{index + 1}. artist.name"
-      end
-    end
-
-    def list_genres
-    end
-
-    def list_songs_by_artist
-    end
-
-    def list_songs_by_genre
-    end
-
-    def play_song
-    end
+    # def list_artists
+    #   Artist.all.sort.each_with_index do |artist|
+    #     puts "#{index + 1}. artist.name"
+    #   end
+    # end
+    # 
+    # def list_genres
+    # end
+    # 
+    # def list_songs_by_artist
+    # end
+    # 
+    # def list_songs_by_genre
+    # end
+    # 
+    # def play_song
+    # end
 
 
 end
