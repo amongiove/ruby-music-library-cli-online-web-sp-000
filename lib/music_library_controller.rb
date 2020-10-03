@@ -52,12 +52,12 @@ class MusicLibraryController
         end
       end
     end
-    
+
     def list_songs_by_genre
       puts "Please enter the name of an genre:"
       user_genre = gets.strip
     end
-    
+
     def play_song
     end
 
