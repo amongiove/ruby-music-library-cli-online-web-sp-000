@@ -46,7 +46,9 @@ class MusicLibraryController
     def list_songs_by_artist
       puts "Please enter the name of an artist:"
       user_artist = gets.strip
-      puts user_artist.songs
+      if Artist.all.detect{|artist| artist.name == user_artist}
+        puts artist.songs
+      end
 
     end
     #
