@@ -71,6 +71,7 @@ class MusicLibraryController
       song = Song.find_by_name(user_song)
       if song != nil
         puts "Playing " + song.name + " by " + song.artist.name
+      end
     end
 
 
