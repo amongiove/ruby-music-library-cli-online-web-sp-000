@@ -26,7 +26,9 @@ class MusicLibraryController
 
     def list_songs
       number = 0
-      Song.all.sort!.each {|song| puts song}
+      sorted_songs = Song.all.sort!
+      sorted_songs.each do |song| 
+        puts "#{number += 1}. #{song}"
     end
 
     def list_artists
