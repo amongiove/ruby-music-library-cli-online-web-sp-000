@@ -27,7 +27,7 @@ class MusicLibraryController
 
     def list_songs
 
-      Song.all.sort_by {|song| song.name}
+      puts Song.all.sort_by {|song| song.name}
       # index = 0
       # for song in Song.all.sort
       #   index += 1
