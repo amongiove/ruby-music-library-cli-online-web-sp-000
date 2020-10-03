@@ -49,6 +49,7 @@ class MusicLibraryController
       if Artist.all.detect{|artist| artist.name == user_artist}
         artist.songs.sort_by {|song| song.name}.uniq.each_with_index do |song, index|
           puts puts "#{index + 1}" + ". " + song.name
+        end
       end
 
     end
