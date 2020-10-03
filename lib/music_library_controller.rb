@@ -32,19 +32,14 @@ class MusicLibraryController
     end
 
     def list_artists
-      # Song.all.sort_by {|song| song.artist.name}.each_with_index do |song, index|
-      #   puts "#{index + 1}" + ". " + song.artist.name
-      # puts   Artist.all.sort_by {|artist| artist.name}.uniq
-        Artist.all.sort_by {|artist| artist.name}.uniq.each_with_index do |artist, index|
-          puts "#{index + 1}" + ". " + artist.name
+      Artist.all.sort_by {|artist| artist.name}.uniq.each_with_index do |artist, index|
+        puts "#{index + 1}" + ". " + artist.name
       end
     end
 
     def list_genres
-      # Song.all.sort_by {|song| song.genre.name}.each_with_index do |song, index|
-      #   puts "#{index + 1}" + ". " + song.genre.name
-        Genre.all.sort_by {|genre| genre.name}.uniq.each_with_index do |genre, index|
-          puts "#{index + 1}" + ". " + genre.name
+      Genre.all.sort_by {|genre| genre.name}.uniq.each_with_index do |genre, index|
+        puts "#{index + 1}" + ". " + genre.name
       end
     end
     #
