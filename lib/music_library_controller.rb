@@ -47,7 +47,6 @@ class MusicLibraryController
       puts "Please enter the name of an artist:"
       user_artist = gets.strip
       artist = Artist.find_by_name(user_artist)
-      # Artist.all.detect{|artist| artist.name == user_artist}
       if artist != nil
         artist.songs.sort_by {|song| song.name}.uniq.each_with_index do |song, index|
           puts "#{index + 1}" + ". " + song.name + " - " + song.genre.name
@@ -58,6 +57,12 @@ class MusicLibraryController
     def list_songs_by_genre
       puts "Please enter the name of a genre:"
       user_genre = gets.strip
+      artist = Genre.find_by_name(user_genre)
+      if genre != nil
+        genre.songs.sort_by {|song| song.name}.uniq.each_with_index do |song, index|
+          puts "#{index + 1}" + ". " + song.name + " - " + song.genre.name
+        end
+      end
     end
 
     def play_song
