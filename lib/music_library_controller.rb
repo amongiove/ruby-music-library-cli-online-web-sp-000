@@ -27,12 +27,13 @@ class MusicLibraryController
 
     def list_songs
 
-      puts Song.all.sort_by {|song| song.name}
-      # index = 0
-      # for song in Song.all.sort
-      #   index += 1
-      #   puts index.to_s + ". " + song.artist.name + " - " + song.name + " - " + song.genre.name
-      # end
+      sorted_songs = Song.all.sort_by {|song| song.name}
+
+      index = 0
+      for song in sorted_songs
+        index += 1
+        puts index.to_s + ". " + song.artist.name + " - " + song.name + " - " + song.genre.name
+      end
       # Song.all.each do |song|
       #   puts song
       # end
