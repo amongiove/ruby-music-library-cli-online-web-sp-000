@@ -72,7 +72,7 @@ class MusicLibraryController
       # if song_number.between(1..list_number)
 
         puts "Playing " + song.name + " by " + song.artist.name
-      end
+      # end
     end
 
 
