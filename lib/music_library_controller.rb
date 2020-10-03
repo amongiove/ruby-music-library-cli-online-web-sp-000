@@ -25,10 +25,10 @@ class MusicLibraryController
   end
 
     def list_songs
-      nunmber = 0
+      nunmber = 1
       sorted_songs = Song.all.sort
       sorted_songs.each do |song|
-        puts number +=1 ". #{song}"
+        puts number ". #{song}"
       end
     end
 
