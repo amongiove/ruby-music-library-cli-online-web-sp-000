@@ -49,7 +49,6 @@ class MusicLibraryController
       Artist.find_by_name(name)
         artist.songs.sort_by {|song| song.name}.uniq.each_with_index do |song, index|
           puts puts "#{index + 1}" + ". " + song.name
-        end
       end
 
     end
