@@ -28,7 +28,7 @@ class MusicLibraryController
     def list_songs
 
       for song in Song.all
-        puts song.artist + " - " + song.name + " - " + song.genre
+        puts song.artist.name + " - " + song.name + " - " + song.genre.name
       end
       # Song.all.each do |song|
       #   puts song
