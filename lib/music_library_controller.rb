@@ -26,7 +26,7 @@ class MusicLibraryController
   end
 
     def list_songs
-      binding.pry
+      # binding.pry
       nunmber = 1
       Song.all.each do |song|
         puts number ". #{song}"
