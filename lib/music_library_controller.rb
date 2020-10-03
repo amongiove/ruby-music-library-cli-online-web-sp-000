@@ -69,8 +69,8 @@ class MusicLibraryController
       puts "Which song number would you like to play?"
       song_number = gets.strip
       number = song_number.to_i
-      # list_number = Song.all.length
-      # if song_number.between?(..list_number)
+      list_number = Song.all.length
+      if number.between?(1..list_number)
         Song.all.sort_by {|song| song.name}
           song = Song.all[number - 1]
       #
