@@ -71,10 +71,9 @@ class MusicLibraryController
       number = song_number.to_i
       list_number = Song.all.length
       if number.between?(1,list_number)
-        Song.all.sort_by {|song| song.name}
-          song = Song.all[number - 1]
-      #
-          puts "Playing " + song.name + " by " + song.artist.name
+        songs = Song.all.sort_by {|song| song.name}
+          play_song = songs[number - 1]
+          puts "Playing " + play_song.name + " by " + play_song.artist.name
       end
     end
 
