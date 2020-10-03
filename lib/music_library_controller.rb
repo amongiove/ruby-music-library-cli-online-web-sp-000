@@ -75,7 +75,7 @@ class MusicLibraryController
           song = Song.all[song_number - 1]
       #
           puts "Playing " + song.name + " by " + song.artist.name
-      # end
+        end
     end
 
     # def list_songs
